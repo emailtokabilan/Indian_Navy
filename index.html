@@ -1,0 +1,228 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN NAVY</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    body {
+        background-color: rgba(0, 0, 0, 0.521);
+    }
+</style>
+
+<body>
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <img class="navy" src="../navy.html/data/navy logo.jpg">
+
+        <nav class="navbar">
+            <a href="../navy.html/index.html">home</a>
+            <a href="../navy.html/navbar/about us.html">about us</a>
+            <a href="../navy.html/navbar/careers&jobs.html">careers&jobs</a>
+            <a href="../navy.html/navbar/joinnavy.html">join navy</a>
+            <a href="../navy.html/navbar/insidethenavy.html">inside the navy</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form name="myform" action="saveData.php" method="post" onsubmit="return validateform()">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email" class="fas fa-Email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+
+    </div>
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>The Indian Navy is the naval branch of the Indian Armed Forces</h3>
+            <a href="https://www.joinindiannavy.gov.in/en/page/sailors-ways-to-join.html" class="btn">Explore</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="../navy.html/data/6.mp4"></span>
+            <span class="vid-btn" data-src="../navy.html/data/2.mp4"></span>
+            <span class="vid-btn" data-src="../navy.html/data/3.mp4"></span>
+            <span class="vid-btn" data-src="../navy.html/data/4.mp4"></span>
+            <span class="vid-btn" data-src="../navy.html/data/5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="../navy.html/data/6.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+    <section class="featured" id="featured">
+
+        <h1 class="heading">
+            <span>FEATURED</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="navy" src="../navy.html/data/mans navy.jpg" width="950px" height="400px"><br>
+                <div class="content"><br>
+                    <h3> CURRENT EVENTS </h3>
+                    <marquee behavior="scroll" direction="up" scrollamount="2">
+                        <p>President's Standard 22nd Missile Vessel Squadron. December 6, 2021.<br> Indian Navy Day. December 4, 2021.<br> INS Vela: Indian Navy to commission indigenously built Scorpene-class submarine. November 25, 2021.<br> Indian Navy
+                            commissioned INS Visakhapatnam. November 22, 2021.<br> Indian Navy's stealth frigate Tushil launched in Russia.</p>
+                    </marquee>
+                    <a href="../navy.html/navyhtml/events.html" class="btn"> See More</a>
+                </div>
+            </div><br>
+
+            <div class="box">
+                <img class="navy" src="../navy.html/data/flag.jpg" width="950px" height="400px"><br>
+                <div class="content"><br>
+                    <h3> FORTH COMMING EVENTS </h3>
+                    <marquee behavior="scroll" direction="up" scrollamount="2">
+                        <p>As compared to other professions in the civilian world, the Indian Navy has a great deal to offer to young men and women.</p>
+                    </marquee>
+                    <a href="../navy.html/navyhtml/forth.html" class="btn">See More</a>
+                </div>
+            </div><br>
+
+            <div class="box">
+                <img class="navy" src="../navy.html/data/navy ship.jpg" width="950px" height="400px"><br>
+                <div class="content"><br>
+                    <h3> NEW INSTRUCTIONS </h3>
+                    <marquee behavior="scroll" direction="up" scrollamount="2">
+                        <p>A written examination conducted by UPSC determines Selection for Permanent Commission through NDA/NA cadet and CDSE (Graduate). This is followed by an interview by the Service Selection Board (SSB). For all other Permanent Commission
+                            entries and Short Service Commission entries there is no written examination.</p>
+                    </marquee>
+
+                    <a href="../navy.html/navyhtml/new instru.html" class="btn">See More</a>
+                </div>
+            </div>
+        </div><br>
+
+    </section>
+    <section class="careers jobs" id="careers jobs">
+
+        <h1 class="heading"><br>
+            <span>CAREERS AND JOBS</span>
+
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="navy" src="../navy.html/data/executive.jpg" width="950px" height="400px"><br>
+                <div class="content"><br>
+                    <h3>EXECUTIVE</h3>
+                    <marquee behavior="scroll" direction="up" scrollamount="2">
+                        <p>The Executive officers gets opportunities to participate in all facets of naval operations onboard a warship. They are trained in specializations such as Anti-Submarine Warfare, Navigation, Communications, Gunnery and Diving.</p>
+                    </marquee>
+                    <a href="../navy.html/navyhtml/executive.html" class="btn">See More</a>
+                </div>
+            </div><br>
+            <div class="box">
+                <img class="navy" src="../navy.html/data/engeer.jpg" width="950px" height="400px"><br>
+                <div class="content"><br>
+                    <h3>ENGINEERING</h3>
+                    <marquee behavior="scroll" direction="up" scrollamount="2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                    </marquee>
+                    <a href="../navy.html/navyhtml/engineering.html" class="btn">See More</a>
+                </div>
+            </div><br>
+            <div class="box">
+                <img class="navy" src="../navy.html/data/eleck.jpg" width="950px" height="400px"><br>
+                <div class="content"><br>
+                    <h3>ELECTRICAL</h3>
+                    <marquee behavior="scroll" direction="up" scrollamount="2">
+                        <p>As an Electrical Officer, you will have the singular responsibility of maintaining the combat readiness of sophisticated Missile Systems, underwater systems, long range sensors and advanced combat management system which employ
+                            niche technologies and complex software algorithms.</p>
+                    </marquee>
+                    <a href="../navy.html/navyhtml/electrical.html" class="btn">See More</a>
+                </div>
+            </div><br>
+            <div class="box">
+                <img class="navy" src="../navy.html/data/edu.jpg" width="950px" height="400px"><br>
+                <div class="content"><br>
+                    <h3>EDUCATION</h3>
+                    <marquee behavior="scroll" direction="up" scrollamount="2">
+                        <p>CPL Holders 19-24 19-25 (a) Educational Qualification BE/B. Tech degree in any discipline from AICTE recognized institute/university with minimum 60% marks. The candidates must have 60% aggregate marks in Class X & XII and minimum
+                            60% marks in English in Class X OR XII.</p>
+                    </marquee>
+                    <a href="../navy.html/navyhtml/education.html" class="btn">see more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>The Indian Navy is a multi-dimensional force that has been organized to safeguard India's maritime territorial integrity and other maritime interests. It is headed by the Chief of the Naval Staff or the CNS. He is of the rank of Admiral
+                    and has his headquarters at New Delhi.</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="https://maps.google.com/maps?ll=19.20224,79.01091&z=13&t=m&hl=en-US&gl=US&mapclient=embed&q=ins%20shivaji">Pune</a>
+                <a href="https://www.google.com/search?rlz=1C1CHBD_enIN983IN983&tbm=lcl&sxsrf=AOaemvJ9QAIG7j0tSRViP268CAbHYNyIag:1642484670845&q=Naval+India&rflfq=1&num=20&stick=H4sIAAAAAAAAAB1RS2pcQRBjFg4GLydk8VbvCKp_1RG8CbnCw5mQwOAJNuRAOYHP5VNY7V1XIakk9f2X7auYqVVWuI_LwNPALdpTskU9xjAIJLde6tZEV7U0OMR2nhDUEBqZqj2RtqCAlLZ6UgmYntrOPBJiDWh3Rol0rVtCZoyQ3ApFqxLaoQF6cjGvFLrYzrw_qq6InEyBKUVlYoajhc4AJrZEZYTTJMp1qtzL1ynPnA6ahQH0asMtJQvjmGitrlBZslBFGR1YMwAYnVmLtoOxVyPkq8jig7HaapaqV4QJ-WGqxXKJM8b1ZFfsRoLBtWTS7DPqZwHB56wPEF99LVUGDKHZ4IqhOivfTqf307cfl9vf62U_rq-3_fVyvDz93n_dXv7fPXw__h3X_fH555_jAzFtoxTbAQAA&ved=2ahUKEwj6ktaazLr1AhUtzjgGHTQLDQwQxXR6BAgDEA0&rldimm=14001728246846009897">Chennai</a>
+                <a href="https://www.google.com/search?q=indian+navy+kerala&rlz=1C1CHBD_enIN983IN983&biw=1182&bih=525&tbm=lcl&sxsrf=AOaemvKVi7XjqN0i5oSnZImp6--0Cew_OA%3A1642484623699&ei=j1PmYc-PKs_e2roP4NmM2A4&oq=indian+navy+kerala&gs_l=psy-ab.3..0i512k1l2j0i22i30k1l5j0i22i10i30k1j0i22i30k1l2.105120.109923.0.111188.13.13.0.0.0.0.127.1113.0j10.10.0....0...1c.1.64.psy-ab..3.10.1112...35i39k1j0i512i263i457i20k1j0i512i263i20k1j0i512i10k1j0i512i433k1j0i67k1j0i512i457k1j0i273k1.0.4j3FR3pe6Xc">Kerala</a>
+                <a href="https://www.google.com/search?q=indian+navy+visakhapatnam&rlz=1C1CHBD_enIN983IN983&biw=1182&bih=525&tbm=lcl&sxsrf=AOaemvKQvpWMM6THGmqY6tnxu24z1Q4qLg%3A1642484736195&ei=AFTmYb2qC4Hh2roPyKCJ2A4&oq=indian+navy+vis&gs_l=psy-ab.1.0.0i273k1j0i512k1l4j0i273k1j0i512k1l4.88859.92108.0.94888.9.9.0.0.0.0.249.1101.3j5j1.9.0....0...1c.1.64.psy-ab..0.9.1100...35i39k1j0i22i30k1j0i22i10i30k1j0i512i263i20k1j0i512i433k1.0.5ayoShIPPlw">Visakhapatnam</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="../navy.html/index.html">home</a>
+                <a href="../navy.html/navbar/about us.html">about us</a>
+                <a href="../navy.html/navbar/careers&jobs.html">careers&jobs</a>
+                <a href="../navy.html/navbar/joinnavy.html">join navy</a>
+                <a href="../navy.html/navbar/insidethenavy.html">inside the navy</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/">facebook</a>
+                <a href="https://www.instagram.com/">instagram</a>
+                <a href="https://twitter.com/login?lang=en">twitter</a>
+                <a href="https://www.linkedin.com/">linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span> Kabilan.... </span> | all rights reserved! </h1>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

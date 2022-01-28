@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        ELECTRICAL
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="../navy.html/navbar/index.html">
+
+</head>
+<style>
+    body {
+        background-color: azure;
+        background-size: cover;
+        text-align: center;
+    }
+    
+    #main {
+        width: 600px;
+        height: 1000px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 20px;
+    }
+</style>
+<style>
+    body {
+        background-color: rgba(0, 0, 0, 0.521);
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+     :root {
+        --orange: #eb943e;
+    }
+    
+    * {
+        font-family: 'Nunito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        transition: all .2s linear;
+    }
+    
+    *::selection {
+        background: var(--orange);
+        color: #fff;
+    }
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 6rem;
+        scroll-behavior: smooth;
+    }
+    
+    section {
+        padding: 2rem 9%;
+    }
+    
+    .heading {
+        text-align: center;
+        padding: 2.5rem 0
+    }
+    
+    .heading span {
+        font-size: 3.5rem;
+        background: rgba(255, 165, 0, .2);
+        color: var(--orange);
+        border-radius: .5rem;
+        padding: .2rem 1rem;
+    }
+    
+    .heading span.space {
+        background: none;
+    }
+    
+    .btn {
+        display: inline-block;
+        margin-top: 1rem;
+        background: var(--orange);
+        color: #fff;
+        padding: .8rem 3rem;
+        border: .2rem solid var(--orange);
+        cursor: pointer;
+        font-size: 1.7rem;
+    }
+    
+    .btn:hover {
+        background: rgba(255, 165, 0, .2);
+        color: var(--orange);
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(51, 51, 51, 0.5);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 9%;
+    }
+    
+    header .logo {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    
+    header .logo span {
+        color: var(--orange);
+    }
+    
+    header .navbar a {
+        color: #fff;
+        font-size: 2rem;
+        margin: 0 .8rem;
+    }
+    
+    header .navbar a:hover {
+        color: var(--orange);
+    }
+    
+    .navy {
+        border-radius: 30px;
+    }
+    
+    header .icons i {
+        font-size: 2.5rem;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+    
+    header .icons i:hover {
+        color: var(--orange);
+    }
+    
+    header .search-bar-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 1.5rem 2rem;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        display: flex;
+        align-items: center;
+        z-index: 1001;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    header .search-bar-container.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    header .search-bar-container #search-bar {
+        width: 100%;
+        padding: 1rem;
+        text-transform: none;
+        color: #333;
+        font-size: 1.7rem;
+        border-radius: .5rem;
+    }
+    
+    header .search-bar-container label {
+        color: black;
+        cursor: pointer;
+        font-size: 3rem;
+        margin-left: 1.5rem;
+    }
+    
+    header .search-bar-container label:hover {
+        color: var(--orange);
+    }
+    
+    .login-form-container {
+        position: fixed;
+        top: -120%;
+        left: 0;
+        z-index: 10000;
+        min-height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, .7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .login-form-container.active {
+        top: 0;
+    }
+    
+    .login-form-container form {
+        margin: 2rem;
+        padding: 1.5rem 2rem;
+        border-radius: .5rem;
+        background: #fff;
+        width: 50rem;
+    }
+    
+    .login-form-container form h3 {
+        font-size: 3rem;
+        color: #444;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    .login-form-container form .box {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.7rem;
+        color: #333;
+        margin: .6rem 0;
+        border: .1rem solid rgba(0, 0, 0, .3);
+        text-transform: none;
+    }
+    
+    .login-form-container form .box:focus {
+        border-color: var(--orange);
+        ;
+    }
+    
+    .login-form-container form #remember {
+        margin: 2rem 0;
+    }
+    
+    .login-form-container form label {
+        font-size: 1.5rem;
+    }
+    
+    .login-form-container form .btn {
+        display: block;
+        width: 100%;
+    }
+    
+    .login-form-container form p {
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        color: #666;
+    }
+    
+    .login-form-container form p a {
+        color: var(--orange);
+    }
+    
+    .login-form-container form p a:hover {
+        color: #333;
+        text-decoration: underline;
+    }
+    
+    .login-form-container #form-close {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        font-size: 5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    #menu-bar {
+        color: #fff;
+        border: .1rem solid #fff;
+        border-radius: .5rem;
+        font-size: 3rem;
+        padding: .5rem 1.2rem;
+        cursor: pointer;
+        display: none;
+    }
+    
+    .footer .credit {
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: normal;
+        color: black;
+        border-top: .1rem solid rebeccapurple;
+    }
+    
+    .footer .credit span {
+        color: var(yellow);
+    }
+    
+    @media (max-width:1500px) {
+        html {
+            font-size: 50%;
+        }
+    }
+    
+    @media (max-width:1000px) {
+        header {
+            padding: 4rem;
+        }
+        section {
+            padding: 4rem;
+        }
+    }
+</style>
+
+<body>
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <img class="navy" src="../data/navy logo.jpg">
+
+        <nav class="navbar">
+            <a href="../index.html">home</a>
+            <a href="../navbar/about us.html">about us</a>
+            <a href="../navbar/careers&jobs.html">careers&jobs</a>
+            <a href="../navbar/joinnavy.html">join navy</a>
+            <a href="../navbar/insidethenavy.html">inside the navy</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="saveData.php" method="post">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email" class="fas fa-Email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+
+    </div>
+</body>
+<script>
+    let searchBtn = document.querySelector('#search-btn');
+    let searchBar = document.querySelector('.search-bar-container');
+    let formBtn = document.querySelector('#login-btn');
+    let loginForm = document.querySelector('.login-form-container');
+    let formClose = document.querySelector('#form-close');
+
+
+    window.onscroll = () => {
+        searchBtn.classList.remove('fa-times');
+        searchBar.classList.remove('active');
+        loginForm.classList.remove('active');
+    }
+
+    searchBtn.addEventListener('click', () => {
+        searchBtn.classList.toggle('fa-times');
+        searchBar.classList.toggle('active');
+    });
+
+    formBtn.addEventListener('click', () => {
+        loginForm.classList.add('active');
+    });
+
+    formClose.addEventListener('click', () => {
+        loginForm.classList.remove('active');
+    });
+</script>
+
+<body>
+    <div class="box-container">
+
+        <div class="box">
+            <img class="navy" src="../data/eleck.jpg" width="950px" height="400px"><br>
+            <div class="content"><br>
+
+                <h1 style="font-size: 40pt;"><span style="color:rgb(219, 184, 69);">ELECTRICAL</span></h1>
+                <p style="font-size: 10pt;"><i><span style="color:rgb(221, 221, 221);">The primary objective of the navy is to safeguard the nation's maritime borders, and in conjunction with other Armed Forces of the union, act to deter or defeat any threats or aggression against the territory, people or maritime interests of India, both in war and peace.<br> Through joint exercises, goodwill visits and humanitarian missions, including disaster relief, Indian Navy promotes bilateral relations between nations.
+                </p>
+            </div>
+        </div>
+        <section class="footer">
+            <h1 class="credit"> created by <span> Kabilan.... </span> | all rights reserved! </h1>
+        </section>
+</body>
+
+</html>
