@@ -184,6 +184,13 @@ header .search-bar-container label:hover {
     text-align: center;
     padding: 1rem 0;
 }
+.featured{
+margin-left: 130px;
+
+}
+.careersjobs{
+    margin-left: 130px;
+}
 
 .login-form-container form .box {
     width: 100%;
